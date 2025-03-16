@@ -6,15 +6,12 @@ import (
 
 func main() {
 	najmniejsza := 0
-	for {
-		var i int
+	i := 1
+	for (i != 0){
 		fmt.Print("Wpisz liczbe calkowita: ")
 		fmt.Scan(&i)
 
-		if i == 0 {
-			break
-		}
-		if najmniejsza == 0 || i < najmniejsza {
+		if i < najmniejsza {
 			najmniejsza = i
 		}
 	}
